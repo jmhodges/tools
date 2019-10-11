@@ -34,6 +34,8 @@ import (
 // Load may return more information than requested.
 type LoadMode int
 
+//go:generate stringer -type=LoadMode
+
 const (
 	// NeedName adds Name and PkgPath.
 	NeedName LoadMode = 1 << iota
